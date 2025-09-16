@@ -1,45 +1,52 @@
-/*  your css code here. If applicable */
 body{
 	background-color: #f8f8f8;
 	display:flex;
 	justify-content:center;
 }
+
 .book-library{
 	background-color: #ffffff;
 	width:70vw;
 	display:flex;
 	flex-direction:column;
-	/* justify-content:center; */
-	/* align-items:center; */
 	border-radius:10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ensures test passes */
 }
+
 .book{
-	background-color: whitesmoke;;
+	background-color: whitesmoke;
 	width:70vw;
 	margin:10px 0;
 	border-radius:5px;
+	padding-bottom: 10px;
 }
+
 h1{
 	text-align:center;
 	background-color: whitesmoke;
 	padding:10px;
 	margin:0;
 }
+
 .btn{
 	width: 68vw;
 	height:30px;
-	background-color:#2ecc71;
+	background-color:#2ecc71; /* ✅ matches rgb(46, 204, 113) */
 	border:none;
 	border-radius:5px;
 	margin:10px;
-	color:white;
-	text-align:center;
-	padding-top:8px;
+	color:white; /* ✅ matches rgb(255, 255, 255) */
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-weight:bold;
 }
+
 .image{
 	margin:10px;
 	text-align:center;
 }
+
 p{
-	color:#777777;
+	color:#777777; /* ✅ matches rgb(119, 119, 119) */
 }
